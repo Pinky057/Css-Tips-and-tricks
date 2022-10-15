@@ -1,0 +1,71 @@
+
+body {
+  min-height: 90vh;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  font: size 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:bisque;
+}
+.tittle,
+.credits {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content * {
+  padding: 25vh 100px;
+  background-position: center;
+  background-size: cover;
+}
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.tittle{
+    font-size: 1.8rem;
+}
+.credits p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.footer {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration:wavy;
+}
+/* code for blend mode */
+
+.one{
+    background-color:brown;
+    background-image:url(beautiful-pink-cosmos-flower.jpg);
+    background-blend-mode: screen;
+}
+.two{
+    background-color:brown;
+    background-image:url(beautiful-pink-cosmos-flower.jpg);
+    background-blend-mode:lighten;
+}
+.three{
+     background-color:brown;
+    background-image:url(beautiful-pink-cosmos-flower.jpg);
+    background-blend-mode:hue;
+}
+.four{
+     background-color:brown;
+    background-image:url(beautiful-pink-cosmos-flower.jpg);
+    background-blend-mode:darken;
+}
+.five{
+     background-color:brown;
+    background-image:url(beautiful-pink-cosmos-flower.jpg);
+    background-blend-mode:color;
+}
+.six{
+     background-color:brown;
+    background-image:url(beautiful-pink-cosmos-flower.jpg);
+    background-blend-mode:luminosity;
+}
