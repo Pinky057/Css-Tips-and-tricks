@@ -37,6 +37,13 @@ body {
     font-weight: 700;
     text-decoration:wavy;
 }
+
+/* code for text selection property */
+::selection{
+  background: yellow;
+ color: #05abc4;
+}
+
 /* code for blend mode */
 
 .one{
