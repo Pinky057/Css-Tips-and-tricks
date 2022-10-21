@@ -8,21 +8,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="tittle">Css blend mode Tips</h1>
-    <div class="content">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-        <div class="four"></div>
-        <div class="five"></div>
-        <div class="six"></div>
-    </div>
-    <footer class="credits">
-       <p>Created By
-        <a class="footer" href="https://github.com/Pinky057"> 
-            Ishrat Jahan Pinky
-        </a>
-    </p>
-    </footer>
+  <h1 class="tittle">css blend mode & CSS TEXT SElection</h1>
+<h4>
+  The default value is auto, which makes selection happen normally as you expect. “Normally” is a bit complicated. It’s worth quoting from the spec here:
+</h4>
+<p>
+On the ::before and ::after pseudo elements, the computed value is none
+If the element is an editable element, the computed value is contain
+Otherwise, if the computed value of user-select on the parent of this element is all, the computed value is all
+Otherwise, if the computed value of user-select on the parent of this element is none, the computed value is none
+Otherwise, the computed value is text
+In other words, it intelligently cascades and resets to a sensical state. It looks like maybe this feature could be used to make pseudo elements selectable, but no final word yet.
+  <br><br>
+  Firefox supports -moz-none, which is just like none except that it means sub-elements can override the cascade and become selectable again with -moz-user-select: text; As of Firefox 21, none behaves like -moz-none.
+<br><br>
+Internet Explorer also supports a so-far-proprietary value, element, in which you can select text inside the element but the selection will stop at the bounds of that element.
+</p>
+<div class="content"> 
+  <div class="one"></div>
+  <div class ="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+  <div class ="five"></div>
+  <div class="six"></div>
+
+</div>
+<footer>
+  <p> Created by
+    <a href="https://github.com/Pinky057"target="_blank"> ishrat jahan pinky</a>
+  </p>
+  </footer>
 </body>
 </html>

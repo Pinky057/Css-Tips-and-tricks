@@ -1,46 +1,52 @@
-
 body {
-  min-height: 90vh;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 400;
-  font: size 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color:bisque;
-}
-.tittle,
-.credits {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.content * {
-  padding: 25vh 100px;
-  background-position: center;
-  background-size: cover;
-}
-.content {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-.tittle{
-    font-size: 1.8rem;
-}
-.credits p{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-.footer {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration:wavy;
+    min-height: 90vh;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 400;
+    font: size 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#84a59d;
+  }
+p, h4{
+  color: #2e424d;
+    font-weight: 600;
 }
 
+  .tittle,
+  .credits {
+    color: #2e424d;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .content * {
+    margin: auto;
+    padding: 15vh 150px;
+    background-position: center;
+    background-size: cover;
+  }
+  .content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .tittle{
+      font-size: 1.8rem;
+  }
+  .credits p{
+      font-size: 1.5rem;
+      font-weight: 700;
+  }
+  .footer {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration:wavy;
+  }
 /* code for text selection property */
 ::selection{
-  background: yellow;
+  background: #f6bd60;
  color: #05abc4;
 }
 
@@ -54,12 +60,12 @@ body {
 .two{
     background-color:brown;
     background-image:url(beautiful-pink-cosmos-flower.jpg);
-    background-blend-mode:lighten;
+    background-blend-mode:overlay;
 }
 .three{
      background-color:brown;
     background-image:url(beautiful-pink-cosmos-flower.jpg);
-    background-blend-mode:hue;
+    background-blend-mode:multiply;
 }
 .four{
      background-color:brown;
