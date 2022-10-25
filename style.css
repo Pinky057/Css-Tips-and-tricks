@@ -1,14 +1,19 @@
 .wrapper{
  background-color: #DAB89D;
- display: flex;
- flex-direction: row;
+ /* display: flex;
+ flex-direction: row; */
  padding:10px;
  text-align: center;
  min-height: 100vh;
 }
-.demo, .demo-1{
+.separable, .non-separable
+{
+     display: flex;
+   flex-direction: row;
+}
+.demo, .demo-1, .demo-2, .demo-3, .demo-4, .demo-5, .demo-6{
  text-align: center;
- /* margin-left: 20px; */
+ 
 }
 img{
      width: 300px;
@@ -20,6 +25,14 @@ h4{
 
 /* code for mix blend mode */
 
+/* non-separable mix blend mode */
+
+h1{
+    text-align: center;
+    color: #fff;
+    font: weight 700px;
+    
+}
 .demo-1 img{
     padding-left:10px;
     mix-blend-mode: difference;
@@ -27,4 +40,22 @@ h4{
 .demo-2 img{
     padding-left:10px;
     mix-blend-mode: multiply;
+}
+.demo-3 img{
+    padding-left:10px;
+    mix-blend-mode: exclusion;
+}
+
+/* non-separable mix blend mode */
+.demo-4 img{
+    padding-left:10px;
+    mix-blend-mode: hue;
+}
+.demo-5 img{
+    padding-left:10px;
+    mix-blend-mode: luminosity;
+}
+.demo-6 img{
+    padding-left:10px;
+    mix-blend-mode: Saturation;
 }
